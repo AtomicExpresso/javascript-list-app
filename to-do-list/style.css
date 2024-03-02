@@ -45,8 +45,40 @@ textarea{
   flex-direction: column;
   margin-top: 10px;
   border-radius: 10px;
+  gap: 10px;
+}
+
+.input-container div{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.input-container div:not(.list-icon-row){
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+div.list-row{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  line-height: 0;
+  background-color: white;
+  padding: 10px 0 10px 0;
+}
+
+div.list-row h2{
+  margin: auto;
+  padding-left: 5vw;
+  text-align: center;
+}
+
+div.list-icon-row{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
+
 
 .input-container img{
   width: 14px;
@@ -67,7 +99,7 @@ textarea{
   flex-direction: row;
 }
 
-.deleteitem{
+.deleteitem-animation{
   animation: deleteitem 1s forwards;
 }
 
@@ -78,6 +110,5 @@ textarea{
   }
   to{
     opacity: 0;
-    display: none
   }
 }
