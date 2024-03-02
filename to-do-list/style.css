@@ -1,0 +1,83 @@
+body{
+  font-family: sans-serif;
+  line-height: 1px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  max-width: 500px;
+  gap: 10px;
+}
+
+textarea{
+  resize: vertical;
+  max-height: 300px; 
+  min-height: 100px;
+}
+
+.container button{
+  background-color: hsl(207, 100%, 60%);
+  border: solid 2px hsla(0, 0%, 79%, 0.582);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.container input{
+  padding: 10px;
+}
+
+.container button:hover{
+  scale: 0.95;
+}
+
+.container p{
+  font-size: 14px;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.input-container img{
+  width: 14px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.input-container img:hover{
+  scale: 0.95;
+  filter: grayscale(0.5);
+}
+
+.title-date{
+  display: flex;
+  flex-direction: row;
+}
+
+.deleteitem{
+  animation: deleteitem 1s forwards;
+}
+
+
+@keyframes deleteitem {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    display: none
+  }
+}
