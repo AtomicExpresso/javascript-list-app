@@ -9,7 +9,7 @@ let contentField = document.getElementById('contentfield');
 
 toDoContainer.style.display = 'flex';
 
-let tasks = () => {
+let list = () => {
   let listcontainer = document.createElement('div');
   let listImgContainer = document.createElement('div');
   let listIconContainer = document.createElement('div');
@@ -61,3 +61,4 @@ let tasks = () => {
   });
 };
 
+addToDoBtn.addEventListener('click', list);
